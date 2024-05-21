@@ -1,6 +1,8 @@
 import { Component, Inject, inject } from '@angular/core';
 import { LoginService } from '../../services/login.service';
 import { Router, RouterLink } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-tabla',
@@ -17,7 +19,7 @@ id:any
 usuario:any
 servicio=inject(LoginService)
 ruta=Inject(Router)
-tamanio:any
+
 
 
 ngOnInit(): void {

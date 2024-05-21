@@ -1,6 +1,12 @@
 
 <label for="filtro">seleccione el tamaño</label>
-<select name="tamanio" id=""></select>
+<select name="" id="" [(ngModel)] ='tamanio'>
+    <option value="seleccione" selected="true">seleccione</option>
+    <option value="pequeño">pequeño</option>
+    <option value="mediano">mediano</option>
+    <option value="grande">grande</option>
+
+  </select>
 
 <table class="table">
     <thead>
@@ -14,17 +20,33 @@
     <tbody>
         @for (item of producto; track item) {
       <tr>
-        <th scope="row">{{item.id}}</th>
-        <td>{{item.producto}}</td>
-       <td>{{item.tamanio}}</td>  
-       
-      
-        <td>
-          <button class="btn btn-success"[routerLink]="['/productoForm']">EDITAR</button><br>
+        @if (item.tamanio==tamanio) {
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.producto}}</td>
+           <td>{{item.tamanio}}</td>  
+           
+          
+            <td>
+              <button class="btn btn-success"[routerLink]="['/productoForm']">EDITAR</button><br>
+             
+              <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button>
          
-          <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button>
-     
-        </td> 
+            </td> 
+
+        }@else if (tamanio=='seleccione') {
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.producto}}</td>
+           <td>{{item.tamanio}}</td>  
+           
+          
+            <td>
+              <button class="btn btn-success"[routerLink]="['/productoForm']">EDITAR</button><br>
+             
+              <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button>
+         
+            </td> 
+        }
+       
       </tr>
     }
 

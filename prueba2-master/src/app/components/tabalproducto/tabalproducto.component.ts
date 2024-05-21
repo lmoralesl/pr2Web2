@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { RevisionService } from '../../services/revision.service';
 import { Router, RouterLink } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-tabalproducto',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,FormsModule],
   templateUrl: './tabalproducto.component.html',
   styleUrl: './tabalproducto.component.css'
 })
@@ -15,7 +16,7 @@ export class TabalproductoComponent {
 
   producto:any
   id:any
-tamanio:any
+tamanio='seleccione'
 
   guardar(datos:any){
     this.servicio.postProductos(datos.value).subscribe()
