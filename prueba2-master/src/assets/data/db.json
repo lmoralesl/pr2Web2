@@ -1,18 +1,18 @@
 {
   "users": [
+
     {
-      "email": "manuel@yop.com",
-      "password": "$2a$10$v10NYLLKOTb/7X89dYtDE.IVrLZQddB3.JV6x.Nh9OlxYaXn8VrHC",
-      "type": "admin",
-      "id": 2
+      "email": "lucho@yop.com",
+      "password": "$2a$10$s7EtCkd1guhaCaSvSDoIPuJbNwJ9jc1P6td15wRdsY9yppQP1j1te",
+      "type": "user",
+      "id": 4
     },
     {
-      "email": "manuel@yop.com",
-      "password": "$2a$10$v10NYLLKOTb/7X89dYtDE.IVrLZQddB3.JV6x.Nh9OlxYaXn8VrHC",
-      "type": "user",
-      "id": 3
+      "email": "julio@yop.com",
+      "password": "$2a$10$9epWx4bRKEsiBdnw.u3N6ulyhedPLeB5uxB3oQGUqxO0d8OHoKBFO",
+      "type": "admin",
+      "id": 5
     }
-
   ],
   "productos": [
     {
