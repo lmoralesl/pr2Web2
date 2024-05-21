@@ -1,0 +1,40 @@
+
+<label for="filtro">seleccione el tamaño</label>
+<select name="tamanio" id=""></select>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Tamaño</th>
+        
+ </tr>
+    </thead>
+    <tbody>
+        @for (item of producto; track item) {
+      <tr>
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.producto}}</td>
+       <td>{{item.tamanio}}</td>  
+       
+      
+        <td>
+          <button class="btn btn-success"[routerLink]="['/productoForm']">EDITAR</button><br>
+         
+          <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button>
+     
+        </td> 
+      </tr>
+    }
+
+    </tbody>
+  </table>
+
+
+  <div >
+ <button (click)="cerrar()">CERRAR</button>
+
+</div>
+ 
+ 

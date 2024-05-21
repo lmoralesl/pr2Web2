@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "email": "manuel@yop.com",
+      "password": "$2a$10$v10NYLLKOTb/7X89dYtDE.IVrLZQddB3.JV6x.Nh9OlxYaXn8VrHC",
+      "type": "admin",
+      "id": 2
+    },
+    {
+      "email": "manuel@yop.com",
+      "password": "$2a$10$v10NYLLKOTb/7X89dYtDE.IVrLZQddB3.JV6x.Nh9OlxYaXn8VrHC",
+      "type": "user",
+      "id": 3
+    }
+
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "producto": "Televisor",
+      "tamanio": "grande"
+    },
+    {
+      "id": 2,
+      "producto": "Teléfono Móvil",
+      "tamanio": "mediano"
+    },
+    {
+      "id": 3,
+      "producto": "Tablet",
+      "tamanio": "mediano"
+    },
+    {
+      "id": 4,
+      "producto": "Laptop",
+      "tamanio": "mediano"
+    },
+    {
+      "id": 5,
+      "producto": "Smartwatch",
+      "tamanio": "pequeño"
+    }
+  ]
+}
