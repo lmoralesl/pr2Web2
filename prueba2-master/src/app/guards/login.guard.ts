@@ -9,7 +9,7 @@ export const loginGuard: CanActivateFn = (route, state) => {
 };
 
   export const revisionGuard: CanActivateFn = (route, state) => {
-    if( localStorage.getItem('admin')== 'true'){
+    if( localStorage.getItem('admin')== 'false'){
       return true
     }else{
       return false;
